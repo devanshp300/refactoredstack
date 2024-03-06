@@ -11,4 +11,7 @@ public class MyStack extends ArrayList {
             this.delegate = new ArrayList<>();
     }
 
+    public void push(Object item) {
+        delegate.add(item);
+    }
 }
