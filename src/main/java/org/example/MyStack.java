@@ -12,6 +12,14 @@ public class MyStack extends ArrayList {
     }
 
     public void push(Object item) {
-        delegate.add(item);
+        this.add(item);
     }
+
+    public Object pop() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return delegate.remove(delegate.size() - 1);
+    }
+
 }
