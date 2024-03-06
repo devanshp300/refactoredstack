@@ -15,11 +15,11 @@ public class MyStack extends ArrayList {
         this.add(item);
     }
 
-    /*public Object pop() {
+    public Object pop() {
         if (isEmpty()) {
             throw new IllegalStateException("Stack is empty");
         }
         return this.remove(this.size() - 1);
-    }*/
+    }
 
 }
